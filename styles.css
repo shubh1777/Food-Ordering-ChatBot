@@ -1,0 +1,271 @@
+/* General styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.logo{
+  display: flex;
+  align-items: center;
+
+}
+.logo img {
+  width: 100px; /* Adjust the width of the logo */
+  border-radius: 80px;
+}
+.logo h3{
+  color: #555;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links li:last-child {
+  margin-right: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #555;
+}
+
+/* Cart icon */
+.cart-icon {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+.cart-icon img {
+  width: 40px; /* Adjust the width of the cart icon */
+  height: auto;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.cart-icon img:hover {
+  transform: scale(1.1); /* Scale up the cart icon on hover */
+}
+
+/* Banner styles */
+.banner {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 400px; /* Adjust height as needed */
+}
+
+.banner-content {
+  position: relative;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  height: 100%;
+}
+
+.banner-image-container {
+  width: 100%; /* Adjust width as needed */
+  height: 100%;
+  overflow: hidden;
+  border-radius: 10px; /* Rounded corners */
+  margin: 0px; /* Margin between image and text */
+  padding: 10px 0px 10px 200px; /* Padding around image and text */
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+  transition: filter 0.5s ease;
+}
+
+.banner-text {
+  flex: 1;
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  text-align:self-start;
+}
+
+.banner-text h2 {
+  margin-bottom: 10px;
+  font-size: 28px;
+  color: #fff;
+}
+
+.banner-text p {
+  font-size: 18px;
+  color: #fff;
+}
+
+/* Hover effect */
+.banner-content:hover .banner-image {
+  filter: blur(5px);
+}
+
+.banner-content:hover .banner-text {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* Section styles (Menu, Offer, Newsletter) */
+.menu, .offer, .newsletter {
+  padding: 50px 0;
+  text-align: center;
+}
+/* .menu-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    width: 250px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 15px;
+    text-align: center;
+}
+
+.menu-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.menu-item h3 {
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+.menu-item p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #888;
+} */
+.menu-items {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 200px; /* Create space between cards */
+}
+
+.menu-item {
+  width: 200px; /* Adjust the width */
+  border: 1px solid #ccc;
+  border-radius: 8px; /* Add border radius */
+  padding: 10px;
+  margin: 10px; /* Create space between cards */
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* Add border radius for the image */
+}
+
+.menu-item h3 {
+  margin-top: 5px;
+  font-size: 16px; /* Adjust font size */
+}
+
+.menu-item p {
+  margin: 5px 0;
+  font-size: 14px; /* Adjust font size */
+  color: #888;
+}
+
+.add-to-cart-btn {
+  padding: 8px 15px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #555;
+}
+
+/* Hover effect */
+.menu-item:hover {
+  transform: scale(1.05); /* Scale up the card on hover */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+/* .add-to-cart-btn {
+    padding: 8px 15px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #555;
+} */
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Styles for the iframe container */
+.iframe-container {
+  position: fixed;
+  bottom: 20px; /* Adjust the bottom distance */
+  right: 20px; /* Adjust the right distance */
+  width: 300px; /* Adjust the width */
+  height: 400px; /* Adjust the height */
+  border-radius: 10px; /* Rounded corners */
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adding shadow for better visibility */
+}
+
+/* Style for the iframe inside the container */
+.iframe-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
